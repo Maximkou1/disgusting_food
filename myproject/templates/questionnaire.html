@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}
+Опросник
+{% endblock %}
+
+{% block body %}
+<form action="/process_results">
+    <h2>Общие вопросы:</h2>
+    <label for="age">Ваш возраст:</label>
+    <input id="age" type="int" id="age" name="age"  placeholder="возраст" required pattern="\d+"> <br><br>
+    <label>Ваш гендер:</label>
+    <label for="male">м</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="female">ж</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="non-binary">небинарный</label>
+    <input type="radio" id="non-binary" name="gender" value="non-binary">
+    <label for="other">иное</label>
+    <input type="radio" id="other" name="gender" value="other"><br><br>
+
+    <fieldset>
+        <h2>Оцените следующие блюда:</h2>
+        <p><label type="chern">Чернослив</label><br>
+        &#129314; <input type="range" id="chern" name="chern" min="-2" max="2"> &#128525;
+        <p><label type="halva">Халва</label><br>
+        &#129314; <input type="range" id="halva" name="halva" min="-2" max="2"> &#128525;
+        <p><label type="salat">Салат Оливье</label><br>
+        &#129314; <input type="range" id="salat" name="salat" min="-2" max="2"> &#128525;
+        <p><label for="holod">Холодец</label><br>
+        &#129314; <input type="range" id="holod" name="holod" min="-2" max="2"> &#128525;
+        <p><label for="masli">Маслины</label><br>
+        &#129314; <input type="range" id="masli" name="masli" min="-2" max="2"> &#128525;
+        <p><label type="griby">Грибы</label><br>
+        &#129314; <input type="range" id="griby" name="griby" min="-2" max="2"> &#128525;
+        <p><label type="peche">Печёнка</label><br>
+        &#129314; <input type="range" id="peche" name="peche" min="-2" max="2"> &#128525;
+        <p><label type="pizza">Пицца с ананасами</label><br>
+        &#129314; <input type="range" id="pizza" name="pizza" min="-2" max="2"> &#128525;
+        <p><label type="tomat">Томатный сок</label><br>
+        &#129314; <input type="range" id="tomat" name="tomat" min="-2" max="2"> &#128525;
+        <p><label type="chips">Чипсы с крабом</label><br>
+        &#129314; <input type="range" id="chips" name="chips" min="-2" max="2"> &#128525;
+
+        <p><label type="chayn">Чайный гриб</label><br>
+        &#129314; <input type="range" id="chayn" name="chayn" min="-2" max="2"> &#128525;
+        <p><label type="mayon">Майонез</label><br>
+        &#129314; <input type="range" id="mayon" name="mayon" min="-2" max="2"> &#128525;
+        <p><label type="ayran">Айран</label><br>
+        &#129314; <input type="range" id="ayran" name="ayran" min="-2" max="2"> &#128525;
+        <p><label type="lakri">Лакрица</label><br>
+        &#129314; <input type="range" id="lakri" name="lakri" min="-2" max="2"> &#128525;
+        <p><label type="kurin">Куриные сердечки</label><br>
+        &#129314; <input type="range" id="kurin" name="kurin" min="-2" max="2"> &#128525;
+        <p><label type="shpin">Шпинат</label><br>
+        &#129314; <input type="range" id="shpin" name="shpin" min="-2" max="2"> &#128525;
+        <p><label type="syrny">Сырный соус</label><br>
+        &#129314; <input type="range" id="syrny" name="syrny" min="-2" max="2"> &#128525;
+        <p><label type="kisel">Кисель</label><br>
+        &#129314; <input type="range" id="kisel" name="kisel" min="-2" max="2"> &#128525;
+        <p><label type="kvash">Квашеная капуста</label><br>
+        &#129314; <input type="range" id="kvash" name="kvash" min="-2" max="2"> &#128525;
+        <p><label type="brocc">Брокколи</label><br>
+        &#129314; <input type="range" id="brocc" name="brocc" min="-2" max="2"> &#128525;
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+    </fieldset>
+
+</form>
+
+<script>
+
+</script>
+
+{% endblock %}

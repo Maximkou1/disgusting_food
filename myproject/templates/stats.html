@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Статистика
+{% endblock %}
+
+{% block body %}
+Число человек, прошедших опрос: {{stats[0]}} <br>
+Средний возраст прошедших опрос: {{stats[1]}} <br>
+Графики: <br>
+<img src='static/img/my_plot.png'/> <br>
+
+{{stats[2]}} <br>
+{{stats[3]}} <br>
+
+<img src='static/img/my_plot_holodets.png'/>
+
+<img src='static/img/my_plot_masliny.png'/>
+
+{% endblock %}
